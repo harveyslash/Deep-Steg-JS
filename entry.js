@@ -96,3 +96,6 @@ model.ready()
     })
 })
     
+
+// $('#loading').hide();
+//     $('#loaded').show();

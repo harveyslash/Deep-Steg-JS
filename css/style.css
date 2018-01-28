@@ -14,11 +14,11 @@ body {
   width: 100%;
   margin: 0;
   color: #fff;
-  background: #1FB264;
+  background: #F36E21;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid #15824B;
+  border-bottom: 4px solid #F36E21;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -26,7 +26,7 @@ body {
 }
 
 .file-upload-btn:hover {
-  background: #1AA059;
+  background: #F36E21;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -55,13 +55,13 @@ body {
 
 .image-upload-wrap1,.image-upload-wrap2 {
   margin-top: 20px;
-  border: 4px dashed #1FB264;
+  border: 4px dashed #F36E21;
   position: relative;
 }
 
 .image-dropping1, .image-dropping2
 .image-upload-wrap1:hover, .image-upload-wrap2:hover {
-  background-color: #1FB264;
+  background-color: #F36E21;
   border: 4px dashed #ffffff;
 }
 
@@ -225,4 +225,8 @@ footer {
     flex-basis: 100%;
     margin: 0 0 5px 0;
   }
+}
+
+.drag-text h3 {
+  color: #b5b5b5;
 }
