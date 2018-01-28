@@ -18,6 +18,7 @@ module.exports = {
       { from: './reveal.html', to: "reveal.html" },
       { from: './css', to: 'css'}, 
       { from: './js', to: 'js'}, 
+      { from: './bg.jpg', to: 'bg.jpg'}, 
       , 
     ])
   ],

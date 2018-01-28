@@ -2,20 +2,30 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <title>jekyll and hAIde</title>
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script  src="js/index.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <title>jekyll and hide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link  href="/css/cropper.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
 <div id="loading">Loading Model ...</div>
 
 <div id="loaded" style="display: none;">
+  <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Jekyll <small>&</small> Hide</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/">Hide</a></li>
+          <li><a href="review.html" class="active">Review</a></li>
+  
+        </ul>
+      </div>
+    </nav>
 	<div class="wrapper">
-      <header>
-        <h1>jekyll and hAIde</h1>
-      </header>
+      
       
       <section class="columns">
         <div class="column">
@@ -25,7 +35,8 @@
             <div class="image-upload-wrap1">
               <input class="file-upload-input1" type='file' onchange="readURL1(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+                <i class="material-icons circled">file_upload</i>
+               <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content1">
@@ -42,7 +53,15 @@
           <img id="completed">
         </div>
       </div>
-      <script type="text/javascript">
+      
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.2.2/cropper.js"></script>
+<script  src="js/index.js"></script>
+<script type="text/javascript" src="reveal.js"></script>
+<script type="text/javascript">
         // Get the modal
         var modal = document.getElementById('myModal');
 
@@ -66,12 +85,5 @@
             }
         }
       </script>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="reveal.js"></script>
-<script type="text/javascript">
-	
-</script>
 </body>
 </html>
