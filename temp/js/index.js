@@ -12,10 +12,23 @@ function readURL1(input) {
     };
     reader.readAsDataURL(input.files[0]);
   } else {
-    removeUpload();
+    removeUpload1();
   }
 }
 
+function changeImage1(el) {
+    var id = el.id;
+    $('.image-upload-wrap1').hide();
+    $("#image1").attr('src', 'images/'+id+'.jpg');
+    $('.file-upload-content1').show();
+}
+
+function changeImage2(el) {
+    var id = el.id;
+    $('.image-upload-wrap2').hide();
+    $("#image2").attr('src', 'images/'+id+'.jpg');
+    $('.file-upload-content2').show();
+}
 function removeUpload1() {
   $('.file-upload-input1').replaceWith($('.file-upload-input1').clone());
   $('.file-upload-content1').hide();
