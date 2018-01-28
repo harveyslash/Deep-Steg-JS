@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
     <title>jekyll and hAIde</title>
         
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link  href="/css/cropper.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
@@ -14,7 +14,7 @@
 
 	
 
-<div id="loading">Loading Model ...</div>
+<div id="loading"><div>Loading Model ...</div></div>
 
 <div id="loaded" style="display: none;">
 	<nav>
@@ -28,9 +28,6 @@
     	</div>
   	</nav>
 	<div class="wrapper">
-      <header>
-        <h1>jekyll and hAIde</h1>
-      </header>
       
       <section class="columns">
         <div class="column">
@@ -40,11 +37,12 @@
             <div class="image-upload-wrap1">
               <input class="file-upload-input1" type='file' onchange="readURL1(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+               <i class="material-icons circled">file_upload</i>
+               <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content1">
-              <img class="file-upload-image1" src="#" alt="your image"/>
+              <img id="image1" class="file-upload-image1" src="#" alt="your image"/>
             </div>
           </div>
         </div>
@@ -56,11 +54,12 @@
             <div class="image-upload-wrap2">
               <input class="file-upload-input2" type='file' onchange="readURL2(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+                <i class="material-icons circled">file_upload</i>
+                <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content2">
-              <img class="file-upload-image2" src="#" alt="your image"/>
+              <img id="image2" class="file-upload-image2" src="#" alt="your image"/>
             </div>
           </div>
         </div>
@@ -68,7 +67,7 @@
 
       <button id="predict" align="center" class="file-upload-btn">SUBMIT</button>
       <div id="myModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content center">
           <span class="close">&times;</span>
           <img id="completed">
         </div>

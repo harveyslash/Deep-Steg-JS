@@ -2,26 +2,30 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <title>jekyll and hAIde</title>
-     <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/materialize.min.css">
+    <title>jekyll and hide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link  href="/css/cropper.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-<div id="loading"><img src="loading.gif"></div>
+<div id="loading">Loading Model ...</div>
 
 <div id="loaded" style="display: none;">
   <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Jekyll <small>&</small> Hide</a>
+        <a href="#" class="brand-logo center">Jekyll <small>&</small> Hide</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
       </div>
     </nav>
 	<div class="wrapper">
-      <header>
-        <h1>jekyll and hAIde</h1>
-      </header>
+      
       
       <section class="columns">
         <div class="column">
@@ -31,7 +35,8 @@
             <div class="image-upload-wrap1">
               <input class="file-upload-input1" type='file' onchange="readURL1(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+                <i class="material-icons circled">file_upload</i>
+               <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content1">
