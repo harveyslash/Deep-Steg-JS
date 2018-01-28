@@ -19,6 +19,7 @@ module.exports = {
       { from: './css', to: 'css'}, 
       { from: './js', to: 'js'}, 
       { from: './bg.jpg', to: 'bg.jpg'}, 
+      { from: './img', to: 'images'},
       , 
     ])
   ],

@@ -130,3 +130,17 @@ $('.image-upload-wrap2').bind('dragover', function() {
 $('.image-upload-wrap2').bind('dragleave', function() {
     $('.image-upload-wrap2').removeClass('image-dropping2');
 });
+
+function changeImage1(el) {
+    var id = el.id;
+    $('.image-upload-wrap1').hide();
+    $("#image1").attr('src', 'images/'+id+'.jpg');
+    $('.file-upload-content1').show();
+}
+
+function changeImage2(el) {
+    var id = el.id;
+    $('.image-upload-wrap2').hide();
+    $("#image2").attr('src', 'images/'+id+'.jpg');
+    $('.file-upload-content2').show();
+}
