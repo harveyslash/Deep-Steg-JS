@@ -16,6 +16,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './index.html', to: "index.html" }, 
       { from: './reveal.html', to: "reveal.html" },
+      { from: './css', to: 'css'}, 
+      { from: './js', to: 'js'}, 
       , 
     ])
   ],

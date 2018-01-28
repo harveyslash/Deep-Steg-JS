@@ -1,9 +1,8 @@
 import KerasJS from 'keras-js'
-// import { secret } from './data'
-console.log("hsdfsdf")
-// import { photo } from './data2'
-
-// console.log(sample)
+import { secret } from './data'
+// console.log("hsdfsdf")
+import { photo } from './data2'
+// // console.log(sample)
 const model = new KerasJS.Model({
   filepath: 'final_reveal_212.bin',
   gpu: true
@@ -27,7 +26,7 @@ model.ready().then(() => {
         c.width = 224
         c.height = 224;
         var ctx = c.getContext("2d");
-        var img = document.getElementById("xes")
+        var img = $('.file-upload-image1')[0]
         ctx.drawImage(img, 0, 0);
         var imgData = ctx.getImageData(0, 0, c.width, c.height);
         console.log(imgData.data)
@@ -74,6 +73,7 @@ model.ready().then(() => {
                 // i.onload = imageLoaded;       // optional callback function
                 i.src = dataUri
                 document.getElementById('completed').setAttribute('src', i.src);
+                modal.style.display = "block";
 
 
             })
