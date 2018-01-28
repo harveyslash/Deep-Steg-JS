@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <title>Jekyll and Hide</title>
         <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script  src="js/index.js"></script>
         <link rel="stylesheet" href="css/style.css">
-        <link  href="/path/to/cropper.css" rel="stylesheet">
-        <script src="/path/to/cropper.js"></script>
-  </head>
+        </head>
 
   <body>
-  	<nav>
+  	<nav class="orange">
 	    <div class="nav-wrapper">
 	      <a href="#" class="brand-logo center">Jekyll <small>&</small> Hide</a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        <li><a href="sass.html">Sass</a></li>
-	        <li><a href="badges.html">Components</a></li>
-	        <li><a href="collapsible.html">JavaScript</a></li>
+	        <li class="active"><a href="index.html">Hide</a></li>
+	        <li><a href="decode.html">Reveal</a></li>
 	      </ul>
     	</div>
   	</nav>
@@ -32,7 +30,8 @@
             <div class="image-upload-wrap1">
               <input class="file-upload-input1" type='file' onchange="readURL1(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+                <i class="material-icons circled">file_upload</i>
+                <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content1">
@@ -48,7 +47,8 @@
             <div class="image-upload-wrap2">
               <input class="file-upload-input2" type='file' onchange="readURL2(this);" accept="image/*" />
               <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+                <i class="material-icons circled">file_upload</i>
+                <span>Drag and drop a file or select add Image</span>
               </div>
             </div>
             <div class="file-upload-content2">
